@@ -15,7 +15,7 @@
     <el-container class="container">
       <!-- 导航栏 -->
       <el-aside class="container_left" width="200px">
-        <el-card>
+        <el-card> 
           <el-menu :default-openeds="['1']" class="container_left_menu">
 
             <el-submenu index="1">
@@ -35,6 +35,8 @@
           </el-menu>
         </el-card>
       </el-aside>
+
+    
 
       <!-- 表格栏 -->
       <el-card class="container_right">
@@ -70,6 +72,7 @@ export default {
       school_level: '本科',
       school_type: '一流大学A类,985,211'
     }
+    
     return {
       school_province: [
         { key: '1', value: '北京市' },
