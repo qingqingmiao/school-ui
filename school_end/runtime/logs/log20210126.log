@@ -1,0 +1,2 @@
+[ERROR][response.go:22]2021/01/26 19:10:46 [unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table("users")]
+[ERROR][response.go:22]2021/01/26 19:11:24 [unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table("users")]

@@ -1,0 +1,7 @@
+[ERROR][response.go:22]2021/06/09 13:43:16 [ERROR: column "tb_match.match_time" must appear in the GROUP BY clause or be used in an aggregate function (SQLSTATE 42803)]
+[ERROR][response.go:22]2021/06/09 13:43:23 [ERROR: column "tb_match.match_time" must appear in the GROUP BY clause or be used in an aggregate function (SQLSTATE 42803)]
+[ERROR][response.go:22]2021/06/09 14:03:10 [ERROR: column "tb_match.match_time" must appear in the GROUP BY clause or be used in an aggregate function (SQLSTATE 42803)]
+[ERROR][response.go:22]2021/06/09 16:17:08 [ERROR: column tb_match.leaguematch_typ does not exist (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/09 16:39:56 [ERROR: column tb_match.leaguematch_typ does not exist (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/09 19:54:13 [ERROR: missing FROM-clause entry for table "transferlist" (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/06/09 19:54:26 [ERROR: missing FROM-clause entry for table "transferlist" (SQLSTATE 42P01)]

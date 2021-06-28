@@ -1,0 +1,8 @@
+[ERROR][response.go:22]2021/05/30 19:06:24 [ERROR: operator does not exist: character varying = integer (SQLSTATE 42883)]
+[ERROR][response.go:22]2021/05/30 19:25:51 [record not found]
+[ERROR][response.go:22]2021/05/30 19:34:45 [ERROR: cached plan must not change result type (SQLSTATE 0A000)]
+[ERROR][response.go:22]2021/05/30 19:39:50 [record not found]
+[ERROR][response.go:22]2021/05/30 20:39:58 [record not found]
+[ERROR][response.go:22]2021/05/30 20:47:38 [record not found]
+[ERROR][response.go:22]2021/05/30 20:51:57 [ERROR: value too long for type character varying(10) (SQLSTATE 22001)]
+[ERROR][response.go:22]2021/05/31 13:56:43 [record not found]

@@ -1,0 +1,7 @@
+[ERROR][response.go:22]2021/05/23 21:01:27 [ERROR: invalid input syntax for integer: "{user_id}" (SQLSTATE 22P02)]
+[ERROR][response.go:22]2021/05/23 21:17:18 [record not found]
+[ERROR][response.go:22]2021/05/23 21:18:25 [record not found]
+[ERROR][response.go:22]2021/05/23 21:25:24 [record not found]
+[ERROR][response.go:22]2021/05/23 21:25:35 [record not found]
+[ERROR][response.go:22]2021/05/23 21:29:36 [record not found]
+[ERROR][response.go:22]2021/05/23 21:29:49 [record not found]

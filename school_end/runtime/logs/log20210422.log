@@ -1,0 +1,7 @@
+[ERROR][response.go:22]2021/04/22 20:38:58 [ERROR: syntax error at or near "and" (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/04/22 20:51:30 [ERROR: syntax error at or near "and" (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/04/22 20:51:34 [ERROR: syntax error at or near "and" (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/04/22 20:51:38 [ERROR: syntax error at or near "and" (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/04/22 21:04:40 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/04/22 21:04:49 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/04/22 21:04:58 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]

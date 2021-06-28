@@ -1,0 +1,1989 @@
+definitions:
+  app.Response:
+    properties:
+      code:
+        type: integer
+      data:
+        type: object
+      msg:
+        type: string
+    type: object
+  models.User_Account:
+    properties:
+      account:
+        type: string
+      password:
+        type: string
+    type: object
+  models.biochemistry:
+    properties:
+      biochemistry_id:
+        type: integer
+      is_del:
+        type: boolean
+      ph:
+        type: string
+      player_code:
+        type: string
+      player_id:
+        type: string
+      player_name:
+        type: string
+      trainplan_id:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+      urine_gravity:
+        type: string
+      urine_protein:
+        type: string
+      urobilinogen:
+        type: string
+    type: object
+  models.catapult:
+    properties:
+      catapult_id:
+        type: integer
+      is_del:
+        type: boolean
+      load_intensity:
+        type: string
+      load_permeter:
+        type: string
+      max_heartrate:
+        type: string
+      meter_permin:
+        type: string
+      period_name:
+        type: string
+      period_number:
+        type: string
+      player_id:
+        type: string
+      player_name:
+        type: string
+      position_name:
+        type: string
+      total_distance:
+        type: string
+      total_player_load:
+        type: string
+      total_time:
+        type: string
+      trainplan_id:
+        type: string
+      unix_end_time:
+        type: string
+      unix_start_time:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+    type: object
+  models.coach:
+    properties:
+      coach_club:
+        type: string
+      coach_name:
+        type: string
+      id:
+        type: integer
+    type: object
+  models.injury_view:
+    properties:
+      chinese_name:
+        type: string
+      club_doctorid:
+        type: integer
+      club_doctorname:
+        type: string
+      injury_id:
+        type: integer
+      injury_level:
+        type: string
+      injury_location:
+        type: string
+      injury_method:
+        type: string
+      injury_position:
+        type: string
+      injury_scene:
+        type: string
+      injury_time:
+        type: string
+      nation_doctorid:
+        type: integer
+      nation_doctorname:
+        type: string
+      player_id:
+        type: integer
+      recovery_time:
+        type: string
+      type_name:
+        type: string
+    type: object
+  models.match_view:
+    properties:
+      hometeam_formation:
+        type: string
+      hometeam_id:
+        type: integer
+      hometeam_name:
+        type: string
+      hometeam_score:
+        type: integer
+      match_id:
+        type: integer
+      match_time:
+        type: string
+      season:
+        type: string
+      type_id:
+        type: integer
+      type_name:
+        type: string
+      visitingteam_formation:
+        type: string
+      visitingteam_id:
+        type: integer
+      visitingteam_name:
+        type: string
+      visitingteam_score:
+        type: integer
+    type: object
+  models.player:
+    properties:
+      age:
+        type: string
+      birthday:
+        type: string
+      chinese_name:
+        type: string
+      english_name:
+        type: string
+      height:
+        type: string
+      id_code:
+        type: string
+      is_del:
+        type: boolean
+      player_id:
+        type: integer
+      position:
+        type: string
+      state:
+        type: string
+      team_name:
+        type: string
+      technical_level:
+        type: string
+      thumbnail_portrait:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+      weight:
+        type: string
+    type: object
+  models.tb_message:
+    properties:
+      is_del:
+        type: boolean
+      message_attachment:
+        type: string
+      message_content:
+        type: string
+      message_id:
+        type: integer
+      message_time:
+        type: string
+      message_title:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+    type: object
+  models.tb_new:
+    properties:
+      is_del:
+        type: boolean
+      new_attachment:
+        type: string
+      new_content:
+        type: string
+      new_id:
+        type: integer
+      new_time:
+        type: string
+      new_title:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+    type: object
+  models.teamformation_data:
+    properties:
+      hformation_data:
+        $ref: '#/definitions/postgres.Jsonb'
+      match_id:
+        type: integer
+      vformation_data:
+        $ref: '#/definitions/postgres.Jsonb'
+    type: object
+  models.traincontent:
+    properties:
+      train_content:
+        $ref: '#/definitions/postgres.Jsonb'
+    type: object
+  models.trainplan:
+    properties:
+      is_del:
+        type: boolean
+      train_content:
+        $ref: '#/definitions/postgres.Jsonb'
+      train_name:
+        type: string
+      train_playerlist:
+        $ref: '#/definitions/postgres.Jsonb'
+      train_position:
+        type: string
+      trainplan_id:
+        type: integer
+      trainsend_time:
+        type: string
+      trainstart_time:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+    type: object
+  models.traintestinfo:
+    properties:
+      arrowrun:
+        type: string
+      bodyfat:
+        type: string
+      flexibility:
+        type: string
+      height:
+        type: integer
+      is_del:
+        type: boolean
+      left_leg:
+        type: string
+      player_id:
+        type: string
+      pull_up:
+        type: string
+      push_up:
+        type: string
+      right_leg:
+        type: string
+      test_position:
+        type: string
+      thirtymeter_sprint:
+        type: string
+      trainplan_id:
+        type: string
+      traintest_id:
+        type: integer
+      update_time:
+        type: string
+      update_userid:
+        type: string
+      verticaljump:
+        type: string
+      weight:
+        type: integer
+      yoyoir2:
+        type: string
+    type: object
+  models.user:
+    properties:
+      account:
+        type: string
+      address:
+        type: string
+      affiliatedunits:
+        type: string
+      birthday:
+        type: string
+      create_founder:
+        type: string
+      create_time:
+        type: string
+      due_time:
+        type: string
+      email:
+        type: string
+      focus_playerid:
+        $ref: '#/definitions/postgres.Jsonb'
+      focus_teamid:
+        $ref: '#/definitions/postgres.Jsonb'
+      id_code:
+        type: string
+      is_del:
+        type: boolean
+      module_authority:
+        $ref: '#/definitions/postgres.Jsonb'
+      nationality:
+        type: string
+      password:
+        type: string
+      portrait:
+        type: string
+      sex:
+        type: string
+      state:
+        type: string
+      team_id:
+        type: string
+      telephone:
+        type: string
+      thumbnail_portrait:
+        type: string
+      update_time:
+        type: string
+      update_userid:
+        type: string
+      user_id:
+        type: integer
+      user_type:
+        type: string
+      username:
+        type: string
+    type: object
+  models.userfocus:
+    properties:
+      focus_playerid:
+        $ref: '#/definitions/postgres.Jsonb'
+      focus_teamid:
+        $ref: '#/definitions/postgres.Jsonb'
+      update_time:
+        type: string
+      update_userid:
+        type: string
+      user_id:
+        type: integer
+      user_type:
+        type: string
+    type: object
+  postgres.Jsonb:
+    properties:
+      json.RawMessage:
+        items:
+          type: integer
+        type: array
+    type: object
+info:
+  contact: {}
+  description: base on gin
+  title: chinasoccer-backendServer
+  version: "1.0"
+paths:
+  /chinasoccer/allmessage:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: searchText
+        in: query
+        name: searchText
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Allmessage
+  /chinasoccer/allnew:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: searchText
+        in: query
+        name: searchText
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Allnew
+  /chinasoccer/allplayer:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get allPlayer
+  /chinasoccer/alluser:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Alluser
+  /chinasoccer/biochemistry:
+    post:
+      parameters:
+      - description: Biochemistry
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.biochemistry'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Biochemistry
+    put:
+      parameters:
+      - description: Biochemistry
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.biochemistry'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Biochemistry
+  /chinasoccer/biochemistry/{trainplan_id}:
+    get:
+      parameters:
+      - description: Trainplan_id
+        in: path
+        name: trainplan_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Biochemistry
+  /chinasoccer/catapult:
+    post:
+      parameters:
+      - description: Catapult
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.catapult'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Catapult
+    put:
+      parameters:
+      - description: Catapult
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.catapult'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Catapult
+  /chinasoccer/catapult/{trainplan_id}:
+    get:
+      parameters:
+      - description: Trainplan_id
+        in: path
+        name: trainplan_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Catapult
+  /chinasoccer/coach:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Coach
+    post:
+      parameters:
+      - description: coach
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.coach'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Coach
+  /chinasoccer/competition:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get competition
+  /chinasoccer/dashboardnum:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get dashboardNum
+  /chinasoccer/delcoach/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del Coach
+  /chinasoccer/doctor:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get doctor
+  /chinasoccer/focus:
+    put:
+      parameters:
+      - description: Userfocus
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.userfocus'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Focus
+  /chinasoccer/focus/{user_id}:
+    get:
+      parameters:
+      - description: User_id
+        in: path
+        name: user_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Focus
+  /chinasoccer/footballteam:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get footballteam
+  /chinasoccer/fourmessage:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Fourmessage
+  /chinasoccer/fournew:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Fournew
+  /chinasoccer/injury:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: searchText
+        in: query
+        name: searchText
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get injury
+    post:
+      parameters:
+      - description: injury_view
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.injury_view'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add injury
+    put:
+      parameters:
+      - description: injury_view
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.injury_view'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update injury
+  /chinasoccer/injury/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del injury
+  /chinasoccer/injury/{player_id}:
+    get:
+      parameters:
+      - description: player_id
+        in: path
+        name: player_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get injurybyid
+  /chinasoccer/match:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: searchText
+        in: query
+        name: searchText
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get match
+    post:
+      parameters:
+      - description: match_view
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.match_view'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add match
+    put:
+      parameters:
+      - description: match_view
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.match_view'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update match
+  /chinasoccer/match/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del match
+  /chinasoccer/message:
+    post:
+      parameters:
+      - description: message
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.tb_message'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Message
+    put:
+      parameters:
+      - description: tb_message
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.tb_message'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update message
+  /chinasoccer/message/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del message
+  /chinasoccer/new:
+    post:
+      parameters:
+      - description: new
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.tb_new'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add New
+    put:
+      parameters:
+      - description: tb_new
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.tb_new'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update new
+  /chinasoccer/new/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del new
+  /chinasoccer/player:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: ageGroup
+        in: query
+        items:
+          type: integer
+        name: ageGroup
+        type: array
+      - description: heightGroup
+        in: query
+        items:
+          type: integer
+        name: heightGroup
+        type: array
+      - description: weightGroup
+        in: query
+        items:
+          type: integer
+        name: weightGroup
+        type: array
+      - description: initials
+        in: query
+        name: initials
+        type: string
+      - description: leaguematch_type
+        in: query
+        items:
+          type: integer
+        name: leaguematch_type
+        type: array
+      - description: team_name
+        in: query
+        name: team_name
+        type: string
+      - description: position
+        in: query
+        name: position
+        type: string
+      - description: state
+        in: query
+        name: state
+        type: string
+      - description: technical_level
+        in: query
+        name: technical_level
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get player
+    post:
+      parameters:
+      - description: Player
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.player'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add player
+    put:
+      parameters:
+      - description: Player
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.player'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update player
+  /chinasoccer/player/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del player
+  /chinasoccer/playerdetailachieve/{player_id}:
+    get:
+      parameters:
+      - description: Player_id
+        in: path
+        name: player_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Playermatch
+  /chinasoccer/playerdetailachieveinfo:
+    get:
+      parameters:
+      - description: player_id
+        in: query
+        name: player_id
+        type: integer
+      - description: season
+        in: query
+        name: season
+        type: string
+      - description: leaguematch_type
+        in: query
+        name: leaguematch_type
+        type: integer
+      - description: is_hometeam
+        in: query
+        name: is_hometeam
+        type: string
+      - description: is_victory
+        in: query
+        name: is_victory
+        type: string
+      - description: com_number
+        in: query
+        name: com_number
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get playerdetailachieveinfo
+  /chinasoccer/playerdetailtransferinfo:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: player_id
+        in: query
+        name: player_id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get playerdetailachieveinfo
+  /chinasoccer/playermatchplayer/{match_id}:
+    get:
+      parameters:
+      - description: Match_id
+        in: path
+        name: match_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Playermatchplayer
+  /chinasoccer/playermatchteam/{match_id}/{team_id}:
+    get:
+      parameters:
+      - description: Match_id
+        in: path
+        name: match_id
+        required: true
+        type: integer
+      - description: Team_id
+        in: path
+        name: team_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Playermatchteam
+  /chinasoccer/schedule/{trainplan_id}:
+    delete:
+      parameters:
+      - description: trainplan_id
+        in: path
+        name: trainplan_id
+        type: integer
+      - description: traincontent
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.traincontent'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Delete Schedule
+    put:
+      parameters:
+      - description: trainplan_id
+        in: path
+        name: trainplan_id
+        type: integer
+      - description: traincontent
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.traincontent'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Schedule
+  /chinasoccer/season:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get season
+  /chinasoccer/teamformation_data:
+    post:
+      parameters:
+      - description: team_type
+        in: query
+        name: team_type
+        required: true
+        type: string
+      - description: teamformation_data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.teamformation_data'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add teamformation_data
+  /chinasoccer/teamplayer/{Id}:
+    get:
+      parameters:
+      - description: Team_id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get teamplayer
+  /chinasoccer/trainplan:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Trainplan
+    post:
+      parameters:
+      - description: trainplan
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.trainplan'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Trainplan
+  /chinasoccer/trainplan/{id}:
+    get:
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Trainplan
+  /chinasoccer/traintestinfo:
+    post:
+      parameters:
+      - description: Traintestinfo
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.traintestinfo'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Traintestinfo
+    put:
+      parameters:
+      - description: Traintestinfo
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.traintestinfo'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Traintestinfo
+  /chinasoccer/traintestinfo/{trainplan_id}:
+    get:
+      parameters:
+      - description: Trainplan_id
+        in: path
+        name: trainplan_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Traintestinfo
+  /chinasoccer/transfer:
+    get:
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: player_id
+        in: query
+        name: player_id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get transfer
+  /chinasoccer/updatecoach/{Id}:
+    put:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      - description: coach
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.coach'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Coach
+  /chinasoccer/uploadexcel:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: Excel File
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Import Excel
+  /chinasoccer/uploadimg:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: Image File
+        in: formData
+        name: image
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Import Image
+  /chinasoccer/user/info:
+    get:
+      parameters:
+      - description: Account
+        in: query
+        name: account
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UserInfo
+  /chinasoccer/user/login:
+    post:
+      parameters:
+      - description: User_Account
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.User_Account'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Post User_Account
+  /chinasoccer/user/logout:
+    post:
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Post LogOutUser
+  /chinasoccer/userdelete/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Delete User
+  /chinasoccer/userinfo:
+    put:
+      parameters:
+      - description: User
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.user'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update User
+  /chinasoccer/userinfo/{user_id}:
+    get:
+      parameters:
+      - description: User_id
+        in: path
+        name: user_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get User
+  /chinasoccer/userinfoPortrait/{Id}:
+    put:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      - description: Portrait File
+        in: formData
+        name: portrait
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update UserPortrait
+  /chinasoccer/userinsert:
+    post:
+      parameters:
+      - description: User
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.user'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Insert User
+  /chinasoccer/video:
+    get:
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Limit
+        in: query
+        name: limit
+        type: integer
+      - description: Video_keyword
+        in: query
+        name: video_keyword
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get Video
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: Video_title
+        in: query
+        name: video_title
+        required: true
+        type: string
+      - description: Video_content
+        in: query
+        name: video_content
+        required: true
+        type: string
+      - description: Video_keyword
+        in: query
+        name: video_keyword
+        required: true
+        type: string
+      - description: Video_time
+        in: query
+        name: video_time
+        required: true
+        type: string
+      - description: Video File
+        in: formData
+        name: storage_path
+        required: true
+        type: file
+      - description: Thumbnail File
+        in: formData
+        name: video_thumbnail
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Add Video
+    put:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: Video_id
+        in: query
+        name: video_id
+        required: true
+        type: integer
+      - description: Video_title
+        in: query
+        name: video_title
+        required: true
+        type: string
+      - description: Video_content
+        in: query
+        name: video_content
+        required: true
+        type: string
+      - description: Video_keyword
+        in: query
+        name: video_keyword
+        required: true
+        type: string
+      - description: Video_time
+        in: query
+        name: video_time
+        required: true
+        type: string
+      - description: Video File
+        in: formData
+        name: storage_path
+        required: true
+        type: file
+      - description: Thumbnail File
+        in: formData
+        name: video_thumbnail
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Update Video
+  /chinasoccer/video/{Id}:
+    delete:
+      parameters:
+      - description: Id
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Del Video
+swagger: "2.0"

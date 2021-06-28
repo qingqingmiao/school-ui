@@ -1,0 +1,4 @@
+[ERROR][response.go:22]2021/03/25 15:27:16 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/25 16:28:08 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/25 21:33:08 [错误: 字段 coach.deleted_at 不存在 (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/03/25 21:33:11 [错误: 字段 coach.deleted_at 不存在 (SQLSTATE 42703)]

@@ -1,0 +1,2 @@
+[ERROR][response.go:22]2021/06/08 16:37:45 [ERROR: input of anonymous composite types is not implemented (SQLSTATE 0A000)]
+[ERROR][response.go:22]2021/06/08 16:39:15 [ERROR: input of anonymous composite types is not implemented (SQLSTATE 0A000)]

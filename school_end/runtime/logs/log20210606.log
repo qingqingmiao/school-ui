@@ -1,0 +1,2 @@
+[ERROR][response.go:22]2021/06/06 16:42:12 [ERROR: column "tb_player.player_id" must appear in the GROUP BY clause or be used in an aggregate function (SQLSTATE 42803)]
+[ERROR][response.go:22]2021/06/06 16:42:15 [ERROR: column "tb_player.player_id" must appear in the GROUP BY clause or be used in an aggregate function (SQLSTATE 42803)]

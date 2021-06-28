@@ -1,0 +1,5 @@
+[ERROR][response.go:22]2021/05/17 20:45:56 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/05/17 20:46:03 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/05/17 20:59:44 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/05/17 21:28:27 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/05/17 21:28:35 [ERROR: relation "playerList" does not exist (SQLSTATE 42P01)]

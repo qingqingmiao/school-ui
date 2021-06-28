@@ -1,0 +1,7 @@
+[ERROR][response.go:22]2021/05/16 15:50:48 [ERROR: duplicate key value violates unique constraint "tb_video_pkey" (SQLSTATE 23505)]
+[ERROR][response.go:22]2021/05/16 16:13:04 [ERROR: duplicate key value violates unique constraint "tb_video_pkey" (SQLSTATE 23505)]
+[ERROR][response.go:22]2021/05/16 16:39:02 [ERROR: duplicate key value violates unique constraint "tb_video_pkey" (SQLSTATE 23505)]
+[WARN][video.go:84]2021/05/16 20:47:36 [multipart: NextPart: EOF]
+[ERROR][response.go:22]2021/05/16 20:47:36 [multipart: NextPart: EOF]
+[WARN][video.go:84]2021/05/16 20:48:36 [multipart: NextPart: EOF]
+[ERROR][response.go:22]2021/05/16 20:48:36 [multipart: NextPart: EOF]

@@ -1,0 +1,8 @@
+[ERROR][response.go:22]2021/03/23 17:40:00 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 17:46:00 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 17:47:30 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 19:49:12 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 19:49:14 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 19:49:15 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 19:49:15 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]
+[ERROR][response.go:22]2021/03/23 19:49:25 [错误: 关系 "student" 不存在 (SQLSTATE 42P01)]

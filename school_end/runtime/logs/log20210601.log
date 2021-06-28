@@ -1,0 +1,5 @@
+[ERROR][response.go:22]2021/06/01 15:31:54 [record not found]
+[ERROR][response.go:22]2021/06/01 16:09:16 [ERROR: column "is_del" does not exist (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/01 16:09:53 [ERROR: column "is_del" does not exist (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/01 16:11:16 [ERROR: column "is_del" does not exist (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/01 16:11:43 [ERROR: column "is_del" does not exist (SQLSTATE 42703)]
