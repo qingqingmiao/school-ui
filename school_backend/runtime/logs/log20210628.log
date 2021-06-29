@@ -1,0 +1,7 @@
+[ERROR][response.go:22]2021/06/28 11:32:27 [错误: 语法错误 在输入的末尾 (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/06/28 11:33:06 [错误: 语法错误 在输入的末尾 (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/06/28 14:41:50 [错误: 语法错误 在 "=" 或附近的 (SQLSTATE 42601)]
+[ERROR][response.go:22]2021/06/28 18:43:23 [错误: 字段 "searchtext" 不存在 (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/28 18:43:27 [错误: 字段 "searchtext" 不存在 (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/28 18:44:46 [错误: 字段 "searchtext" 不存在 (SQLSTATE 42703)]
+[ERROR][response.go:22]2021/06/28 18:46:25 [错误: 字段 "searchtext" 不存在 (SQLSTATE 42703)]
